@@ -3,7 +3,6 @@
 A simple **Linux-style SSH wrapper script** for Windows PowerShell.  
 It allows quick login to servers defined in your `~/.ssh/config` file using numeric indexes or hostnames, set a default server, list available servers, and reset the default.
 
-> **Note:** This version **does not include the interactive `-I` command**.
 
 ---
 
@@ -39,6 +38,7 @@ Set-Alias login "C:\Users\<YourUser>\scripts\login.ps1"
 
 3. Save and restart PowerShell.
 
+---
 ## Usage
 
 ```powershell
@@ -50,6 +50,8 @@ login -r           # reset default server
 login myserver     # login by hostname
 login -h           # show help
 ```
+
+---
 ## SSH Config Requirement
 The script reads hosts from your SSH config file at:
 ```
